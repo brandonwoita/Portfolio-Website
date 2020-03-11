@@ -83,6 +83,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
+    width: 100%;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -147,7 +148,7 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      //padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
