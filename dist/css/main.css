@@ -100,7 +100,7 @@
   opacity: 1;
   width: 250px;
   height: 250px;
-  background-image: url("../img/NewHeadshot2020.JPG");
+  background-image: url("img/NewHeadshot2020.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ body {
 }
 
 body#bg-img {
-  background: url(../img/background.jpg);
+  background: url(img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
