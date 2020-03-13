@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio",
   "main": "index.js",
-  "scripts": {
+  "scripts": {"start": "node server.js",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Brandon Woita",
