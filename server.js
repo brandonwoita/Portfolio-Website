@@ -5,6 +5,15 @@ const port = process.env.PORT || 3000
 
 app.use(express.static(__dirname + "/dist"));
 
+app.use((req, res, next) => {
+      if (req.header('x-forwarded-proto') !== 'https') {
+        res.redirect(`https://${req.header('host')}${req.url}`);
+      }
+      else {
+        next()
+      }
+    });
+
 app.get('/about',  (req, res) => 
       res.sendFile(__dirname + '/dist/about.html') 
 );
